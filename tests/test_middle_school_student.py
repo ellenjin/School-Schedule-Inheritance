@@ -36,9 +36,10 @@ def test_middle_school_student_summary_with_transportation():
     name = "Ellis"
     grade = "junior"
     classes = ["Painting"]
+    gets_transportation = True
 
     # Act
-    ellis = MiddleSchoolStudent(name, grade, classes, gets_transportation=True)
+    ellis = MiddleSchoolStudent(name, grade, classes, gets_transportation)
     summary = ellis.summary()
 
     # Assert

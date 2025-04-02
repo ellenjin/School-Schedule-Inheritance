@@ -8,6 +8,7 @@ class MiddleSchoolStudent(Student):
     
     def summary(self):
         parent_summary = super().summary()
+        
         if self.gets_transportation:
             transportation_summary = f"{self.name} needs transportation."
         else:
